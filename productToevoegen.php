@@ -21,6 +21,7 @@ require 'config/config.php';
     <br>
     <label>Categorie: <input type="number" name="categorie"></label>
     <br><br>
+<!--    Met de gegeven database is het niet mogelijk om een foto toe te voegen-->
     <input type="submit" name="submit">
 </form>
 

@@ -24,6 +24,7 @@ while ($row = mysqli_fetch_array($result)) {
     $achternaam = $row['achternaam'];
 
 
+//    Met de gegeven database zijn dit de enige gegevens die voor mij beschikbaar zijn.
     echo '<tr>';
     echo "<td>$id</td><td>$voornaam</td><td>$tussenvoegsel</td><td>$achternaam</td>";
     echo '<td>';
