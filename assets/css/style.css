@@ -1,0 +1,39 @@
+/*Navigation bar*/
+a {
+    color: #d3d3d3;
+    text-decoration: none;
+}
+
+.top_bar {
+    width: 100%;
+    min-width: 1050px;
+    height: 40px;
+    background-color: #ced9eb;
+    border-bottom: 0.25em solid #ced9eb;
+    margin: 0 0 10px 0;
+    display: inline-flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo a {
+    font-family: 'Bellota-LightItalic', sans-serif;
+    margin-left: 10px;
+    font-size: 25px;
+    position: relative;
+    color: #87888a;
+}
+
+nav {
+    float: right;
+    right: 1px;
+    position: absolute;
+    margin: 10px;
+}
+
+nav a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
