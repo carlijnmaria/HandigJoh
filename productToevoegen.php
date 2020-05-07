@@ -27,7 +27,8 @@ require 'config/config.php';
 
 <br>
 <a href="productWijzigen.php">Wijzig producten</a>
-
+<br>
+<a href="productVerwijderen.php">Verwijder producten</a>
 </body>
 </html>
 

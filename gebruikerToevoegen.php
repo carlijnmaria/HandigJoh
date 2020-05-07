@@ -8,6 +8,7 @@
 <a href="index.php">Klik hier om terug te keren naar de homepage</a>
 <br><br>
 
+
 <form method="post" action="verwerkGebruikerToevoegen.php">
     <label>Voornaam: <input type="text" name="voornaam"></label>
     <br>
