@@ -12,12 +12,6 @@ if ($categorienummer == '3') {
 
 // Create connection
 $con = mysqli_connect('localhost', 'root', 'root', 'HandigJoh') or die ('Error connecting');
-
-//// query to delete a record
-//$query ="";
-//$result = mysqli_query($con, $query) or die ('Error updating');
-//header("Location: categorieVerwijderen.php");
-
 $query = "SELECT productnummer,omschrijving, categorienummer FROM product WHERE categorienummer='$categorienummer'";
 $result = mysqli_query($con, $query) or die ('Error querying');
 echo '<table>';
