@@ -9,7 +9,7 @@
 require 'config/config.php';
 
 // 2. Kijken in de database
-$query = "SELECT productnummer, omschrijving, prijs FROM product";
+$query = "SELECT productnummer, omschrijving, prijs, categorienummer FROM product";
 $result = mysqli_query($con, $query) or die ('Error querying');
 echo '<table>';
 
@@ -18,31 +18,35 @@ while ($row = mysqli_fetch_array($result)) {
     $productnummer = $row['productnummer'];
     $omschrijving = $row['omschrijving'];
     $prijs = $row['prijs'];
+    $categorie = $row['categorienummer'];
 
     echo '<tr>';
-    echo "<td>Product: $productnummer</td>";
-    echo '</tr>';
-    echo '<tr>';
-    echo "<td>Product: $omschrijving</td>";
-    echo '</tr>';
-    echo '<tr>';
-    echo "<td>$prijs euro</td>";
+    echo "<td>Productnummer: $productnummer | </td><td>Product: $omschrijving | </td>
+    <td>Kosten: $prijs euro | </td><td>Te vinden in categorie: $categorie</td>";
     echo '</tr>';
 
 }
 
 echo '</table>';
+echo '<hr>';
 
 ?>
-<br>
+<h3>Een overzicht bekijken gesorteerd op categorie:</h3>
 <a href="gereedschap.php">Zie hier alle producten voor gereedschap</a>
 <br>
 <a href="veevoer.php">Zie hier alle producten voor veevoer</a>
 <br>
-<a href="zoekProduct.php">Om in de producten te zoeken op omschrijving of productnummer klik hier</a>
+<a href="algemeen.php">Zie hier alle producten voor algmeen</a>
 <br>
-<a href="categorieVerwijderen.php">Klik hier om categorieen te verwijderen</a>
-<br>
+<a href="materiaal.php">Zie hier alle producten voor materiaal</a>
+<hr>
+<h3>Producten zoeken:</h3>
+Om in de producten te zoeken op omschrijving of productnummer <a href="zoekProduct.php">klik hier</a>
+<hr>
+<h3>Categorie verwijderen:</h3>
+<a href="categorieVerwijderen.php">Klik hier</a> om categorieen te verwijderen.
+<hr>
+<h3>HOME</h3>
 <a href="index.php">Terug naar de home pagina</a>
 </body>
 </html>
