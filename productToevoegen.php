@@ -15,9 +15,9 @@ require 'config/config.php';
 <br><br>
 
 <form method="POST" action="verwerkProductToevoegen.php">
-    <label>Omschrijving: <input type="text" name="omschrijving"></label>
+    <label>Omschrijving: <input type="text" name="omschrijving" pattern=".{4,}"   required title="Minimaal 4 letters verplicht"</label>
     <br>
-    <label>Prijs: <input type="text" name="prijs"></label>
+    <label>Prijs: <input type="text" name="prijs" required></label>
     <br>
     <label>Categorie: <input type="number" name="categorie"></label>
     <br><br>

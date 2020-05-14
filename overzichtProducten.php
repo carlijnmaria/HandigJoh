@@ -22,7 +22,7 @@ while ($row = mysqli_fetch_array($result)) {
 
     echo '<tr>';
     echo "<td>Productnummer: $productnummer | </td><td>Product: $omschrijving | </td>
-    <td>Kosten: $prijs euro | </td><td>Te vinden in categorie: $categorie</td>";
+    <td>Kosten: € $prijs | </td><td>Te vinden in categorie: $categorie</td>";
     echo '</tr>';
 
 }
@@ -31,7 +31,7 @@ echo '</table>';
 echo '<hr>';
 
 ?>
-<h3>Een overzicht bekijken gesorteerd op categorie:</h3>
+<h2>Een overzicht bekijken gesorteerd op categorie:</h2>
 <a href="gereedschap.php">Zie hier alle producten voor gereedschap</a>
 <br>
 <a href="veevoer.php">Zie hier alle producten voor veevoer</a>
@@ -40,13 +40,13 @@ echo '<hr>';
 <br>
 <a href="materiaal.php">Zie hier alle producten voor materiaal</a>
 <hr>
-<h3>Producten zoeken:</h3>
+<h2>Producten zoeken:</h2>
 Om in de producten te zoeken op omschrijving of productnummer <a href="zoekProduct.php">klik hier</a>
 <hr>
-<h3>Categorie verwijderen:</h3>
+<h2>Categorie verwijderen:</h2>
 <a href="categorieVerwijderen.php">Klik hier</a> om categorieen te verwijderen.
 <hr>
-<h3>HOME</h3>
+<h2>HOME</h2>
 <a href="index.php">Terug naar de home pagina</a>
 </body>
 </html>
